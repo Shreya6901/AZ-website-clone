@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# AlgoZenith Dashboard Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based web application that replicates the layout and functionality of the "AlgoZenith" learning platform. It includes various features such as navigation panels, chapter views, learning material sections, and a tabbed interface. The layout and component structure is designed to match a given design specification.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The application is structured into several main components to organize the sidebar, tabs, chapter list, and learning material sections effectively.
 
-### `npm start`
+### Key Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Sidebar**: Main navigation panel that includes links to various sections like Dashboard, Learn, Forums, Upskill, Contest, and Leaderboard.
+- **Chapter Sidebar**: Contains a list of chapters with their respective durations.
+- **Tabs**: Provides a tabbed interface for switching between "Mentor Sessions" and "Learning Material" views.
+- **Learning Material**: Displays parts within a chapter, each containing specific content types (videos, articles, quizzes, etc.), which are expandable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Responsive Design**: Adapts layout for different screen sizes.
+- **Tab Navigation**: Allows users to switch between "Mentor Sessions" and "Learning Material."
+- **Expandable Sections**: Users can expand each part in a chapter to view detailed content.
+- **Progress Tracking**: Shows progress bars and duration for different learning materials.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: Main framework for building the UI components.
+- **React Router**: Used for handling client-side routing between sections.
+- **CSS**: Custom CSS for styling components and layout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/) and npm installed on your machine.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/yourusername/algozenith-dashboard-clone.git
+   cd algozenith-dashboard-clone
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install Dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Run the Application**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **View in Browser**
 
-### Code Splitting
+   Open [http://localhost:3000/upskill](http://localhost:3000/upskill) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+```
+algozenith-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Sidebar.js              # Main navigation sidebar
+│   │   ├── Sidebar.css
+│   │   ├── ChapterSidebar.js       # Sidebar with chapters
+│   │   ├── ChapterSidebar.css
+│   │   ├── Tabs.js                 # Tabbed navigation component
+│   │   ├── Tabs.css
+│   │   ├── LearningMaterial.js     # Learning material with expandable parts
+│   │   ├── LearningMaterial.css
+│   ├── pages/
+│   │   ├── UpskillPage.js          # Main page layout for the Upskill section
+│   │   ├── UpskillPage.css
+│   ├── App.js                      # Main app component with routing
+│   ├── index.js                    # Entry point for the React app
+└── package.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+- **Sidebar Navigation**: Click on any of the main navigation buttons (Dashboard, Learn, etc.) to navigate between sections.
+- **Upskill Section**: Click on the "Upskill" button in the main sidebar to access the subpage with tabs for "Mentor Sessions" and "Learning Material."
+- **Tabs**: Switch between "Mentor Sessions" and "Learning Material" by clicking on the tab buttons at the top.
+- **Chapter Navigation**: In the "Learning Material" view, click on any chapter in the chapter sidebar to view its contents.
+- **Expandable Parts**: Click on a part (e.g., Part 1) to expand and view its contents, including videos, articles, and quizzes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Customization
 
-### Advanced Configuration
+Feel free to customize the layout, colors, and styles by modifying the CSS files in the `src/components` and `src/pages` directories.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
 
-### Deployment
+### Main Page Layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Main Layout Screenshot](./screenshots/main-layout.png)
 
-### `npm run build` fails to minify
+### Chapter and Learning Material View
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Learning Material Screenshot](./screenshots/learning-material.png)
+
+_(Note: Add screenshots to the `screenshots` folder and update these links accordingly)_
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request. Any improvements or bug fixes are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e6efff;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #333;
+  color: #000;
+}

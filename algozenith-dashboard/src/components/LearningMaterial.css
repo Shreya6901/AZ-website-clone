@@ -1,0 +1,16 @@
+.part {
+  background-color: #e6efff;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.part-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part-items {
+  padding-left: 20px;
+}

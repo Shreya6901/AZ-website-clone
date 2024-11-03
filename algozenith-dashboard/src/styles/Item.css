@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item span {
+  color: #666;
+}
